@@ -112,3 +112,15 @@ header{
 .galeriaImg:hover > img{
 	transform: scale(0.95);
 }
+
+/* MARCAS */
+.fondoOpaco{
+	background: rgba(131, 87, 235, 0.3);
+	filter: opacity(0.7);
+}
+.marcasHover > a{
+	transition: filter 0.4s;
+}
+.marcasHover > a:hover{
+	filter: opacity(0.5);
+}
