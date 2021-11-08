@@ -104,3 +104,11 @@ header{
 	font-size: 35px;
 	background: var(--azul);
 }
+
+/* GALERIA */
+.galeriaImg > img{
+	transition: 0.5s transform;
+}
+.galeriaImg:hover > img{
+	transform: scale(0.95);
+}
