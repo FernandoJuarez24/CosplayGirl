@@ -1,0 +1,106 @@
+:root{
+	--rosa: #ffb8b8;
+	--azul: #45aaf2;
+	--grisClaro:#f8f9fa;
+}
+
+/* ESTILOS GENERALES */
+html{
+	scroll-behavior: smooth;
+}
+a{
+	color: inherit;
+}
+.container > .row{
+	margin: 40px 0;
+}
+header{
+	min-height: 100vh;
+}
+
+/* ESTILOS PARTICULARES */
+/* MENU */
+.navbar-brand > img{
+	width:40px;
+}
+#menu .lista a{
+	color: black;
+	transition: 0.5s filter;
+}
+#menu .lista a:hover{
+	filter: opacity(0.5);
+}
+#menu .activo{
+	text-decoration: underline var(--rosa);
+	text-underline-offset: 5px;
+}
+
+/* REDES SOCIALES  */
+.iconosRedes > a{
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	color: white;
+	transition: 0.5s filter;
+}
+.iconosRedes > a i{
+	color: white;
+}
+.iconosRedes > a:hover{
+	filter: opacity(0.5);
+}
+.face{
+	background: #023693;
+}
+.twitter{
+	background:#33a9f3;
+}
+.insta{
+	background: #f1066b;
+}
+.decoracion{
+	font-size: 20px;
+}
+/* DECORACION */
+.decoracion::before,
+.decoracion::after{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -10;
+	animation: turn 7s linear infinite;
+	width: var(--box-size);
+	height: var(--box-size);
+}
+.decoracion::before{
+	--box-size: 3em;
+	background-image: radial-gradient(var(--azul) 50%, var(--rosa) 50%);
+	top: calc(99% - (var(--box-size) / 2));
+	right:  calc(99% - (var(--box-size) / 2));
+}
+.decoracion::after{
+	--box-size: 3em;
+	background-image: radial-gradient(var(--azul) 50%, var(--rosa) 50%);
+	bottom: calc(99% - (var(--box-size) / 2));
+	left:  calc(99% - (var(--box-size) / 2));
+}
+/* ANIMACION DECORACIONES */
+@keyframes turn{
+	to{
+		transform: rotate(1turn);
+	}
+}
+
+/* SERVICIOS */
+.iconoServicio{
+	--box-size: 70px;
+	width: var(--box-size);
+	height: var(--box-size);
+	padding:  10px;
+	color: white;
+	font-size: 35px;
+	background: var(--azul);
+}
