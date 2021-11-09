@@ -1,0 +1,8 @@
+@media screen and (max-width:500px){
+	main{
+		padding-top: 60px;
+	}
+	#menu > .nav{
+		background: whitesmoke;
+	}
+}
